@@ -1,0 +1,2 @@
+theoretical probability of good estimate: 9096803.332075
+theta_SE 1.244993, theory: 1.236449

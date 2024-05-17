@@ -84,7 +84,6 @@ def precalc(lwe_n, q, sd, B, m, name):
     pool.close()
     pool.join()
     #pool.clear()
-    del pool[:]
 
     # TODO: fix memory leak in this map operation
     map(f, thetaSE_list)
