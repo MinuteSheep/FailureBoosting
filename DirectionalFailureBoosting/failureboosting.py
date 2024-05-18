@@ -15,7 +15,7 @@ from sage.all import RR, ZZ, ceil, sqrt, arccos, cos, pi, log, exp,\
 
 ACCURACY = 2**-300
 GRIDPOINTS = 300
-CIPHERTEXTS = 34
+CIPHERTEXTS = 512
 
 
 # calculate failure boosting when x ciphertexts are known and save in txt file
@@ -79,7 +79,7 @@ def precalc(lwe_n, q, sd, B, m, name):
 
     import multiprocessing as mp
     import pathos
-    pool = pathos.pools._ProcessPool(96, maxtasksperchild=1)
+    pool = pathos.pools._ProcessPool(24, maxtasksperchild=1)
     pool.map(f, thetaSE_list )
     pool.close()
     pool.join()
