@@ -15,13 +15,25 @@ from sage.all import RR, ZZ, ceil, sqrt, arccos, cos, pi, log, exp,\
 
 ACCURACY = 2**-300
 GRIDPOINTS = 300
+<<<<<<< HEAD
 CIPHERTEXTS = 512
+=======
+<<<<<<< HEAD
+CIPHERTEXTS = 300
+=======
+CIPHERTEXTS = 512
+>>>>>>> b348510a18ebbfff98a0c9f730769305552f1198
+>>>>>>> 1b9c2d360bbb7d4674fd48c3bf6e48a830bb60ec
 
 
 # calculate failure boosting when x ciphertexts are known and save in txt file
 def precalc(lwe_n, q, sd, B, m, name):
     name2 = name
+<<<<<<< HEAD
     name = name + '/tmp_Kyber768_sd116'
+=======
+    name = name + '/tmp_Kyber768_sd1'
+>>>>>>> 1b9c2d360bbb7d4674fd48c3bf6e48a830bb60ec
     if not os.path.exists(name):
         os.mkdir(name)
 
